@@ -741,7 +741,7 @@ html {
     .main-title {
         order: 1;
         font-size: 2.5rem;
-        margin-top: 3rem;
+        margin-top: 5rem;
         position: relative;
         top: auto;
         left: auto;
@@ -1123,6 +1123,18 @@ html {
 @media (max-width: 768px) {
     .typewriter-text {
         font-size: 1rem;
+        /* Disable typewriter effect on mobile */
+        width: 100%;
+        opacity: 1;
+        white-space: normal;
+        animation: none;
+    }
+    
+    .typewriter-text.active,
+    .typewriter-text.erasing {
+        animation: none;
+        width: 100%;
+        opacity: 1;
     }
 }
 

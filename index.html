@@ -142,6 +142,20 @@
             let currentIndex = 0;
             let isTyping = false;
             
+            // Check if device is mobile
+            const isMobile = window.innerWidth <= 768;
+            
+            // If mobile, just display the text without animation
+            if (isMobile) {
+                typewriterElements.forEach(element => {
+                    const text = element.getAttribute('data-text');
+                    element.textContent = text;
+                    element.style.width = '100%';
+                    element.style.opacity = '1';
+                });
+                return; // Exit early for mobile devices
+            }
+            
             function typeText(element, text) {
                 return new Promise((resolve) => {
                     element.textContent = '';
@@ -205,8 +219,10 @@
                 }
             }
             
-            // Start the repeating cycle
-            startTypewriterCycle();
+            // Start the repeating cycle only for non-mobile devices
+            if (!isMobile) {
+                startTypewriterCycle();
+            }
         });
     </script>
     <div class="black"></div>
