@@ -1,10 +1,28 @@
 // Mobile Navigation Toggle
 const mobileToggle = document.querySelector('.mobile-menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
 
+// Toggle mobile menu
 mobileToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     mobileToggle.classList.toggle('active');
+});
+
+// Close mobile menu when nav links are clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        mobileToggle.classList.remove('active');
+    });
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        mobileToggle.classList.remove('active');
+    }
 });
 
 // Smooth Scrolling for Navigation Links
