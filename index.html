@@ -3,228 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naushin - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Naushin - Modern Mystic Fairy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="logo">
-            <span class="logo-icon">✦</span> Naushin
-        </div>
-        <nav class="main-nav">
-            <a href="#home" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact" class="btn-contact">Contact</a>
-        </nav>
-    </header>
-
-    <main class="site-main" id="home">
-        <!-- Floating Stickers -->
-        <div class="floating-stickers">
-            <img src="assets/1.png" alt="Sticker 1" class="floating-sticker sticker-1">
-            <img src="assets/2.png" alt="Sticker 2" class="floating-sticker sticker-2">
-            <img src="assets/3.png" alt="Sticker 3" class="floating-sticker sticker-3">
-            <img src="assets/4.png" alt="Sticker 4" class="floating-sticker sticker-4">
-            <img src="assets/5.png" alt="Sticker 5" class="floating-sticker sticker-5">
-        </div>
-        
-        <div class="hero-content">
-            <div class="background-text">
-                <div class="outline-text">MODERNMYSTICFAIRY</div>
-                <div class="outline-text">MODERNMYSTICFAIRY</div>
-                <div class="outline-text">MODERNMYSTICFAIRY</div>
-                <div class="outline-text">MODERNMYSTICFAIRY</div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="star-icon">✨</span>
+                <span class="logo-text">Naushin</span>
             </div>
-
-            <h1 class="main-title">MODERNMYSTICFAIRY</h1>
-
-            <div class="image-container">
-                <img src="assets/naushin.jpeg" alt="A portrait of Naushin" class="profile-photo">
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Me</a>
+                <a href="#contact" class="nav-link cta-button">Get in Touch</a>
             </div>
-
-            <div class="social-links">
-                <p><strong>BY</strong> NAUSHIN</p>
-            </div>
-
-            <div class="description">
-                <p class="typewriter-text" data-text="A hidden fairy in the human world."></p>
-                <p class="typewriter-text" data-text="Crafting dreams with words." data-delay="2000"></p>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </main>
+    </nav>
 
-    <!-- Butterfly animation JavaScript - REMOVED -->
-
-    <section id="about" class="page-section">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="assets/naushin1.jpg" alt="Naushin portrait">
-            </div>
-            <div class="about-content">
-                <div class="content-centered">
-                    <h2>About Me</h2>
-                    <p>I ignite light in words and scatter them in quiet corners of the internet.</p><p>Raised on cassettes and novels, I write like a love letter.</p><p>My work sprinkles life with nuance — soft, untamed, a little messy.</p>
-                    <br>
-                    <div class="portfolio-section">
-                            <div class="portfolio-intro">
-                                <span class="magic-wand">🪄</span>
-                                <p>Have a look...</p>
-                            </div>
-                            
-                            <div class="portfolio-links">
-                                <a href="https://www.notion.so/Naushin-Writes-23841b8e15d68093b73cea8d3b6509f5" target="_blank" class="portfolio-card writing">
-                                    <div class="card-bg"></div>
-                                    <i class="fas fa-feather-alt"></i>
-                                    <span>Writing Portfolio</span>
-                                    <div class="hover-shimmer"></div>
-                                </a>
-                                <a href="https://www.notion.so/Naushin-UGC-Portfolio-23241b8e15d680a3bf28ffbbdbb3c1f3" target="_blank" class="portfolio-card ugc">
-                                    <div class="card-bg"></div>
-                                    <i class="fas fa-video"></i>
-                                    <span>UGC Portfolio</span>
-                                    <div class="hover-shimmer"></div>
-                                </a>
-                            </div>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <!-- Left Side - Image -->
+                <div class="image-container">
+                    <div class="floating-star star-1">✦</div>
+                    <div class="floating-star star-2">✦</div>
+                    <div class="floating-star star-3">✦</div>
+                    <div class="floating-star star-4">✦</div>
+                    <div class="floating-star star-5">✦</div>
+                    <div class="floating-star star-6">✦</div>
+                    <div class="image-wrapper">
+                        <img src="assets/naushin.jpeg" alt="Naushin" class="profile-image">
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="page-section">
-        <div class="content-centered">
-            <h2>Connect To Me</h2>
-            <div class="contact-container">
-                <div class="contact-left">
-                    <div class="contact-card instagram">
-                        <a href="https://www.instagram.com/_.cinderelllla._/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-                    </div>
-                    <div class="contact-card tiktok">
-                        <a href="https://www.tiktok.com/@naushin777" target="_blank">
-                            <i class="fab fa-tiktok"></i>
-                            <span>TikTok</span>
-                        </a>
-                    </div>
-                    <div class="contact-card linkedin">
-                        <a href="https://www.linkedin.com/in/naushin1" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <div class="contact-card youtube">
-                        <a href="https://youtube.com/@modernmysticfairy" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                            <span>YouTube</span>
-                        </a>
-                    </div>
-                    <div class="contact-card email">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=makaninaushin78@gmail.com&su=Inquiry&body=Hi%20Naushin,%0A%0AI%20hope%20you're%20doing%20well.%20I%20came%20across%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch%20regarding" target="_blank">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script>
-        // Repeating Typewriter Effect
-        document.addEventListener('DOMContentLoaded', function() {
-            const typewriterElements = document.querySelectorAll('.typewriter-text');
-            let currentIndex = 0;
-            let isTyping = false;
-            
-            // Check if device is mobile
-            const isMobile = window.innerWidth <= 768;
-            
-            // If mobile, just display the text without animation
-            if (isMobile) {
-                typewriterElements.forEach(element => {
-                    const text = element.getAttribute('data-text');
-                    element.textContent = text;
-                    element.style.width = '100%';
-                    element.style.opacity = '1';
-                });
-                return; // Exit early for mobile devices
-            }
-            
-            function typeText(element, text) {
-                return new Promise((resolve) => {
-                    element.textContent = '';
-                    element.classList.add('active');
-                    
-                    let i = 0;
-                    const typeInterval = setInterval(() => {
-                        if (i < text.length) {
-                            element.textContent += text.charAt(i);
-                            i++;
-                        } else {
-                            clearInterval(typeInterval);
-                            setTimeout(() => {
-                                resolve();
-                            }, 1500); // Pause after typing
-                        }
-                    }, 80);
-                });
-            }
-            
-            function eraseText(element) {
-                return new Promise((resolve) => {
-                    element.classList.remove('active');
-                    element.classList.add('erasing');
-                    
-                    setTimeout(() => {
-                        element.textContent = '';
-                        element.classList.remove('erasing');
-                        resolve();
-                    }, 2000);
-                });
-            }
-            
-            async function startTypewriterCycle() {
-                if (typewriterElements.length === 0) return;
                 
-                while (true) {
-                    // Type first line
-                    const firstElement = typewriterElements[0];
-                    const firstText = firstElement.getAttribute('data-text');
-                    await typeText(firstElement, firstText);
-                    
-                    // Type second line
-                    if (typewriterElements[1]) {
-                        const secondElement = typewriterElements[1];
-                        const secondText = secondElement.getAttribute('data-text');
-                        await typeText(secondElement, secondText);
-                    }
-                    
-                    // Pause with both lines visible
-                    await new Promise(resolve => setTimeout(resolve, 2000));
-                    
-                    // Erase both lines
-                    if (typewriterElements[1]) {
-                        await eraseText(typewriterElements[1]);
-                    }
-                    await eraseText(typewriterElements[0]);
-                    
-                    // Pause before repeating
-                    await new Promise(resolve => setTimeout(resolve, 1000));
-                }
-            }
+                <!-- Right Side - Hero Text -->
+                <div class="hero-text">
+                    <div class="hero-word modern">MODERN</div>
+                    <div class="hero-word mystic">MYSTIC</div>
+                    <div class="hero-word fairy">FAIRY</div>
+                    <div class="byline">BY NAUSHIN</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I ignite light in words and scatter them in quiet corners of the internet. Raised on cassettes and novels, I write like a love letter. My work sprinkles life with nuance — soft, untamed, a little messy.</p>
+                </div>
+                <div class="portfolio-links">
+                    <a href="https://www.notion.so/Naushin-Writes-23841b8e15d68093b73cea8d3b6509f5" class="portfolio-btn" target="_blank">
+                        <span class="btn-icon">📖</span>
+                        Writing Portfolio
+                    </a>
+                    <a href="https://www.notion.so/Naushin-UGC-Portfolio-23241b8e15d680a3bf28ffbbdbb3c1f3" class="portfolio-btn" target="_blank">
+                        <span class="btn-icon">🎥</span>
+                        UGC Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Connect To Me</h2>
+            <div class="contact-content">
+                <div class="contact-column">
+                    <a href="https://www.instagram.com/_.cinderelllla._/" class="contact-link" target="_blank">
+                        <span class="contact-icon"><i class="fab fa-instagram"></i></span>
+                        @_.cinderelllla._
+                    </a>
+                    <a href="https://www.tiktok.com/@naushin777?_t=ZN-8yAOQ27dX0Q&_r=1&fbclid=PAQ0xDSwLq0mVleHRuA2FlbQIxMAABp_Wj98eQy0YxuUq-4-Ie1NQ0tt63XMiuSu0Eg0pipXwnW3KeEKq45gT-NSpk_aem_u4h5nLAgDCYTggZs0c8JOw" class="contact-link" target="_blank">
+                        <span class="contact-icon"><i class="fab fa-tiktok"></i></span>
+                        @naushin777
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=makaninaushin78@gmail.com&su=Inquiry&body=Hi%20Naushin,%0A%0AI%20hope%20you're%20doing%20well.%20I%20came%20across%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch%20regarding" class="contact-link" target="_blank">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        makaninaushin78@gmail.com
+                    </a>
+                </div>
+                <div class="contact-column">
+                    <a href="https://youtube.com/@modernmysticfairy?feature=shared" class="contact-link" target="_blank">
+                        <span class="contact-icon"><i class="fab fa-youtube"></i></span>
+                        @ModernMysticFairy
+                    </a>
+                    <a href="https://www.linkedin.com/in/naushin1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="contact-link" target="_blank">
+                        <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+                        Naushin Makani
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-sparkle">✨</span>
+                    <span class="footer-name">Naushin</span>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#about" class="footer-link">About Me</a>
+                        <a href="#contact" class="footer-link">Get in Touch</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact">
+                        <a href="https://www.instagram.com/_.cinderelllla._/" class="footer-contact-link" target="_blank">
+                            <span class="contact-icon"><i class="fab fa-instagram"></i></span>
+                            @_.cinderelllla._
+                        </a>
+                        <a href="https://www.tiktok.com/@naushin777?_t=ZN-8yAOQ27dX0Q&_r=1&fbclid=PAQ0xDSwLq0mVleHRuA2FlbQIxMAABp_Wj98eQy0YxuUq-4-Ie1NQ0tt63XMiuSu0Eg0pipXwnW3KeEKq45gT-NSpk_aem_u4h5nLAgDCYTggZs0c8JOw" class="footer-contact-link" target="_blank">
+                            <span class="contact-icon"><i class="fab fa-tiktok"></i></span>
+                            @naushin777
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=makaninaushin78@gmail.com&su=Inquiry&body=Hi%20Naushin,%0A%0AI%20hope%20you're%20doing%20well.%20I%20came%20across%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch%20regarding" class="footer-contact-link" target="_blank">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            makaninaushin78@gmail.com
+                        </a>
+                        <a href="https://youtube.com/@modernmysticfairy?feature=shared" class="footer-contact-link" target="_blank">
+                            <span class="contact-icon"><i class="fab fa-youtube"></i></span>
+                            @ModernMysticFairy
+                        </a>
+                        <a href="https://www.linkedin.com/in/naushin1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="footer-contact-link" target="_blank">
+                            <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+                            Naushin Makani
+                        </a>
+                    </div>
+                </div>
+            </div>
             
-            // Start the repeating cycle only for non-mobile devices
-            if (!isMobile) {
-                startTypewriterCycle();
-            }
-        });
-    </script>
-    <div class="black"></div>
+            <div class="footer-bottom">
+                <p class="footer-text">Designed with stardust by Naushin ✨</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
